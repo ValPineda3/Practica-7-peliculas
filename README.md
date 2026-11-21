@@ -1,16 +1,53 @@
-# React + Vite
+# Práctica 7 - App de Películas con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## 1. Nombre del proyecto
+Práctica 7 • Aplicación web de películas con React, Vite, React Router, API externa, GitHub y despliegue en Netlify.
 
-Currently, two official plugins are available:
+## 2. Integrantes del equipo
+- Pineda Jimenez Valeria Monserrat (Modalidad individual)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 3. Objetivo
+Desarrollar una aplicación web de una sola página (SPA) utilizando React y Vite que consuma una API externa de películas (TMDB) para visualizar un catálogo general y el detalle individual de cada película mediante rutas dinámicas, integrando control de versiones en GitHub y despliegue continuo en Netlify.
 
-## React Compiler
+## 4. Tecnologías utilizadas
+- React
+- Vite
+- React Router DOM
+- CSS (Grid y Flexbox)
+- API REST de The Movie Database (TMDB)
+- Git y GitHub
+- Netlify
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 5. Estructura general del proyecto
+```text
+Practica-7-peliculas/
+├── public/
+│   └── _redirects
+├── src/
+│   ├── components/
+│   │   ├── Footer.jsx
+│   │   ├── Footer.css
+│   │   ├── MovieCard.jsx
+│   │   ├── MovieCard.css
+│   │   ├── MovieGrid.jsx
+│   │   └── MovieGrid.css
+│   ├── img/
+│   │   ├── escudo-cucei.png
+│   │   └── placeholder.png
+│   ├── pages/
+│   │   ├── LandingPage.jsx
+│   │   ├── MovieDetails.jsx
+│   │   └── MovieDetails.css
+│   ├── routers/
+│   │   └── AppRouter.jsx
+│   ├── services/
+│   │   └── httpClient.js
+│   ├── utils/
+│   │   └── getMovieImg.js
+│   ├── App.jsx
+│   ├── App.css
+│   └── main.jsx
+├── .env
+├── .gitignore
+├── package.json
+└── README.md
